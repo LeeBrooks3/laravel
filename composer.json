@@ -1,0 +1,46 @@
+{
+  "name": "leebrooks3/laravel",
+  "description": "A package of core Laravel things.",
+  "keywords": ["laravel", "framework", "php"],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=7.1",
+    "illuminate/broadcasting": "^5.6",
+    "illuminate/bus": "^5.6",
+    "illuminate/contracts": "^5.6",
+    "illuminate/database": "^5.6",
+    "illuminate/http": "^5.6",
+    "illuminate/notifications": "^5.6",
+    "illuminate/queue": "^5.6",
+    "illuminate/routing": "^5.6",
+    "illuminate/support": "^5.6",
+    "illuminate/view": "^5.6",
+    "leebrooks3/php": "^0.0",
+    "ramsey/uuid": "^3.7"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/leebrooks3/php"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "LeeBrooks3\\Laravel\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LeeBrooks3\\Laravel\\Tests\\": "tests/",
+      "LeeBrooks3\\Tests\\": "vendor/LeeBrooks3/php/tests/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
