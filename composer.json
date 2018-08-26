@@ -33,7 +33,7 @@
   "autoload-dev": {
     "psr-4": {
       "LeeBrooks3\\Laravel\\Tests\\": "tests/",
-      "LeeBrooks3\\Tests\\": "vendor/LeeBrooks3/php/tests/"
+      "LeeBrooks3\\Tests\\": "vendor/leebrooks3/php/tests/"
     }
   },
   "config": {
@@ -42,5 +42,5 @@
     "sort-packages": true
   },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
 }
