@@ -19,6 +19,10 @@
     "leebrooks3/php": "^0.0",
     "ramsey/uuid": "^3.7"
   },
+  "require-dev": {
+    "fzaninotto/faker": "^1.7",
+    "phpunit/phpunit": "^7.0"
+  },
   "repositories": [
     {
       "type": "vcs",
