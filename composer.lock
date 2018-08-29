@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "16fe30aa1c90724fe1868d0b8236bd67",
+    "content-hash": "a35775c82cad833ca139bf6253074557",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -410,6 +410,57 @@
                 "url"
             ],
             "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "illuminate/auth",
+            "version": "v5.6.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/auth.git",
+                "reference": "dbfd4994c61d7cfc68eb206450f10e5d33a3c833"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/auth/zipball/dbfd4994c61d7cfc68eb206450f10e5d33a3c833",
+                "reference": "dbfd4994c61d7cfc68eb206450f10e5d33a3c833",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.6.*",
+                "illuminate/http": "5.6.*",
+                "illuminate/queue": "5.6.*",
+                "illuminate/support": "5.6.*",
+                "php": "^7.1.3"
+            },
+            "suggest": {
+                "illuminate/console": "Required to use the auth:clear-resets command (5.6.*).",
+                "illuminate/queue": "Required to fire login / logout events (5.6.*).",
+                "illuminate/session": "Required to use the session based guard (5.6.*)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Auth\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Auth package.",
+            "homepage": "https://laravel.com",
+            "time": "2018-08-14T12:58:42+00:00"
         },
         {
             "name": "illuminate/broadcasting",
@@ -1269,16 +1320,16 @@
         },
         {
             "name": "leebrooks3/php",
-            "version": "v0.0.3",
+            "version": "v0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LeeBrooks3/php.git",
-                "reference": "798167946663ae20df1e6d5f54a673d7b24d6881"
+                "reference": "d1724b1c9eabb4544cbd59509aebcc349185510f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LeeBrooks3/php/zipball/798167946663ae20df1e6d5f54a673d7b24d6881",
-                "reference": "798167946663ae20df1e6d5f54a673d7b24d6881",
+                "url": "https://api.github.com/repos/LeeBrooks3/php/zipball/d1724b1c9eabb4544cbd59509aebcc349185510f",
+                "reference": "d1724b1c9eabb4544cbd59509aebcc349185510f",
                 "shasum": ""
             },
             "require": {
@@ -1309,10 +1360,10 @@
                 "php"
             ],
             "support": {
-                "source": "https://github.com/LeeBrooks3/php/tree/v0.0.3",
+                "source": "https://github.com/LeeBrooks3/php/tree/v0.0.4",
                 "issues": "https://github.com/LeeBrooks3/php/issues"
             },
-            "time": "2018-08-25T17:05:50+00:00"
+            "time": "2018-08-29T21:30:25+00:00"
         },
         {
             "name": "nesbot/carbon",

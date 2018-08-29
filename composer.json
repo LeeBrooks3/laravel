@@ -1,11 +1,12 @@
 {
   "name": "leebrooks3/laravel",
-  "description": "A package of core Laravel things.",
+  "description": "A library of core Laravel things.",
   "keywords": ["laravel", "framework", "php"],
   "license": "MIT",
   "type": "project",
   "require": {
     "php": ">=7.1",
+    "illuminate/auth": "^5.6",
     "illuminate/broadcasting": "^5.6",
     "illuminate/bus": "^5.6",
     "illuminate/contracts": "^5.6",
@@ -16,7 +17,7 @@
     "illuminate/routing": "^5.6",
     "illuminate/support": "^5.6",
     "illuminate/view": "^5.6",
-    "leebrooks3/php": "^0.0",
+    "leebrooks3/php": "^0.0.4",
     "ramsey/uuid": "^3.7"
   },
   "require-dev": {
@@ -38,6 +39,13 @@
     "psr-4": {
       "LeeBrooks3\\Laravel\\Tests\\": "tests/",
       "LeeBrooks3\\Tests\\": "vendor/leebrooks3/php/tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LeeBrooks3\\Laravel\\Providers\\ServiceProvider"
+      ]
     }
   },
   "config": {
