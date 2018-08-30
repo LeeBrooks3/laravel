@@ -15,7 +15,7 @@ class DatabaseUserProviderTest extends UserProviderTest
      *
      * @var Hasher|MockObject
      */
-    private $mockHasher;
+    protected $mockHasher;
 
     /**
      * Creates a mock model repository and hasher instance and the repository instance to test.

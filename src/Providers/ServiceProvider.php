@@ -13,7 +13,7 @@ use LeeBrooks3\Repositories\ModelRepositoryInterface;
 class ServiceProvider extends BaseServiceProvider
 {
     /**
-     * {@inheritdoc}
+     * Registers the database repository user provider.
      *
      * @return void
      */
