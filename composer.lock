@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "742af5b6c291278f34977bf8d17b7895",
+    "content-hash": "2f485f0c4d438a7b5ec6c5e56e90fc75",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1320,7 +1320,7 @@
         },
         {
             "name": "leebrooks3/php",
-            "version": "v0.0.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LeeBrooks3/php.git",
@@ -4049,7 +4049,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "leebrooks3/php": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
