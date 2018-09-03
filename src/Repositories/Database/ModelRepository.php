@@ -68,13 +68,14 @@ abstract class ModelRepository extends BaseModelRepository
     public function create(array $attributes = []) : ModelInterface
     {
         $model = $this->model($attributes);
+        $changes = $model->getChangedAttributes();
 
         $this->dispatchEvent($model, ModelEvent::CREATING);
 
         /** @var Table $result */
         $result = $this->getTable()
             ->newQuery()
-            ->create($attributes);
+            ->create($changes);
 
         $model = $this->model($result->toArray());
 
