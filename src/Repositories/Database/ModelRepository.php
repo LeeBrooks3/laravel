@@ -54,7 +54,7 @@ abstract class ModelRepository extends BaseModelRepository
             ->where($params)
             ->get()
             ->map(function (Table $result) {
-                return $this->model($result->toArray());
+                return $this->makeModel($result->toArray());
             })
             ->all();
     }
@@ -67,7 +67,7 @@ abstract class ModelRepository extends BaseModelRepository
      */
     public function create(array $attributes = []) : ModelInterface
     {
-        $model = $this->model($attributes);
+        $model = $this->makeModel($attributes);
         $changes = $model->getAttributes();
 
         $this->dispatchEvent($model, ModelEvent::CREATING);
@@ -77,7 +77,7 @@ abstract class ModelRepository extends BaseModelRepository
             ->newQuery()
             ->create($changes);
 
-        $model = $this->model($result->toArray());
+        $model = $this->makeModel($result->toArray());
 
         $this->dispatchEvent($model, ModelEvent::CREATED);
 
@@ -93,7 +93,7 @@ abstract class ModelRepository extends BaseModelRepository
      */
     public function find($id, array $params = []) : ModelInterface
     {
-        $model = $this->model();
+        $model = $this->makeModel();
 
         $primaryKey = $model->getKeyName();
         $routeKey = $model->getRouteKeyName();
@@ -108,7 +108,7 @@ abstract class ModelRepository extends BaseModelRepository
 
         $result = $query->firstOrFail();
 
-        return $this->model($result->toArray());
+        return $this->makeModel($result->toArray());
     }
 
     /**
